@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mi Página Web</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        .contenido {
+            padding: 100px 20px;
+        }
+
+        h1 {
+            font-size: 40px;
+            color: #222;
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin: 20px;
+            font-size: 18px;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            margin: 10px;
+            font-size: 18px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #1e7e34;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="contenido" id="contenido">
+
+        <h1>¡Bienvenido a mi página!</h1>
+
+        <p>
+            Bienvenido a mi primera página web, hay distintas informaciones sobre mí y sobre ti.
+        </p>
+
+        <button onclick="sobreMi()">
+            Sobre mí
+        </button>
+
+        <button onclick="sobreTi()">
+            Sobre ti
+        </button>
+
+    </div>
+
+
+    <script>
+
+        function sobreMi() {
+            document.getElementById("contenido").innerHTML = `
+                <h1>Sobre mí</h1>
+
+                <p>
+                    Soy Erick Artemio Mendoza Ken, un estudiante con 18 años
+                    que está aprendiendo a programar y que ama mucho a su novia
+                    Marielly, que es muy bella y guapa. Que sepa que es la única
+                    a la que amo sin dudar, pero más importante, que sepa que la
+                    amo tanto como para crear una segunda página más detallada
+                    sobre ella.
+                </p>
+
+                <button onclick="location.reload()">
+                    Regresar
+                </button>
+            `;
+        }
+
+
+        function sobreTi() {
+            document.getElementById("contenido").innerHTML = `
+                <h1>Sobre ti</h1>
+
+                <p>
+                    Hola Marielly Guadalupe Hernandez. Soy tu novio, Erick,
+                    y ten en mente que te amo tanto que quiero demostrarte mi
+                    amor por ti de muchas maneras a mi alcance. Sin importar
+                    lo que suceda, estaré contigo hasta el final.
+                    Te amo mucho, mi bella niña ❤️
+                </p>
+
+                <button onclick="location.reload()">
+                    Regresar
+                </button>
+            `;
+        }
+
+    </script>
+
+</body>
+</html>
+
